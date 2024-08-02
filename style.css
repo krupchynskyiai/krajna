@@ -1,0 +1,67 @@
+* {box-sizing: border-box;}
+
+.slideshow-container {
+    position: relative;
+    max-width: 1024px; /* Встановив максимальну ширину на 100% */
+    min-height: 698px;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    transition: opacity 1.5s; /* Додав плавний перехід */
+}
+
+.mySlides img {
+    width: 100%; /* Встановив ширину на 100% */
+    height: 100%; /* Встановив висоту на 100% */
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px; /* Зменшив висоту точок */
+    width: 10px; /* Зменшив ширину точок */
+    margin: 0 4px;
+    background-color: transparent; /* Прозорий фон для неактивних точок */
+    border: 2px solid #285883; /* Синя обведення */
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #285883; /* Змінив колір активних точок на синій */
+    border: 2px solid #285883; /* Темно-синя обведення для активних точок */
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.dot-container {
+    position: absolute;
+    bottom: 25px; /* Відступ від низу слайда */
+    right: 0; /* Вирівнювання по правому краю */
+    width: 120px; /* Встановив ширину на 150 пікселів */
+    height: 20px; /* Встановив висоту на 20 пікселів */
+    text-align: center;
+    background: rgba(231, 234, 234, 0.8); /* Встановив фон контейнера */
+    padding: 5px;
+    border-radius: 10px 0px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
