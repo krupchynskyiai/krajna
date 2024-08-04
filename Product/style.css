@@ -4,6 +4,20 @@ body {
     padding: 0;
 }
 
+.products-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.product-list {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 1920px;
+    width: 100%;
+    justify-content: center;
+}
+
 .product-card {
     border-bottom: 1px solid #eaedf1;
     border-left: 1px solid #eaedf1;

@@ -3,7 +3,7 @@
 .slideshow-container {
     position: relative;
     max-width: 1024px; /* Встановив максимальну ширину на 100% */
-    min-height: 698px;
+    /* min-height: 698px; */
     margin: auto;
 }
 
