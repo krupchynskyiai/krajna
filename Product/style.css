@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.product-card {
+    border-bottom: 1px solid #eaedf1;
+    border-left: 1px solid #eaedf1;
+    border-radius: 0;
+    padding-top: 30px;
+    padding-right: 0;
+    padding-bottom: 39px;
+    padding-left: 0;
+    text-align: center;
+    width: 350px;
+    margin: 0;
+    display: inline-block;
+}
+
+.product-image {
+    display: flex;
+    width: 192px;
+    height: 192px;
+    margin: 0 auto 45px;
+}
+
+.product-details {
+    width: 260px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #364859;
+    text-align: center;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.quantity-info {
+    color: #9db2c6;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 25px;
+}
+
+.quantity-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.quantity-button {
+    font-size: 20px;
+    font-weight: 700;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #9db2c6;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.quantity-button:hover {
+    color: #000;
+}
+
+.quantity-input {
+    font-size: 15px;
+    font-weight: 700;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: #9db2c6;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.add-to-cart {
+    display: inline-block;
+    width: 136px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid #d1dce8;
+    border-radius: 20px;
+    color: #2c77bc;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    background-color: white;
+    line-height: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.add-to-cart:hover {
+    background-color: #2c77bc;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .add-to-cart {
+        font-size: 15px;
+    }
+}
