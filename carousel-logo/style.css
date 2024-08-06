@@ -58,3 +58,11 @@
     font-size: 35px;
     letter-spacing: 0.1px;
 }
+
+.logos-container {
+  display: flex;
+  max-width: 1920px;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+}

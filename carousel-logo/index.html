@@ -11,22 +11,24 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="logos">
-    <span class="logos-tittle">Нам довіряють</span>
-      <div class="logos-slide">
-        <img src="./img-logo/1_plus_1_logo.svg.png" />
-        <img src="./img-logo/download (11).png" />
-        <img src="./img-logo/download (12).png" />
-        <img src="./img-logo/Hyundai_Motor_Company_logo.svg.png" />
-        <img src="./img-logo/Logo_молокія.png" />
-        <img src="./img-logo/okko-logo.png" />
-        <img src="./img-logo/Oschadbank_(uk).png" />
-        <img src="./img-logo/Torchyn_loho.png" />
+    <div class="logos-container">
+      <div class="logos">
+        <span class="logos-tittle">Нам довіряють</span>
+        <div class="logos-slide">
+          <img src="./img-logo/1_plus_1_logo.svg.png" />
+          <img src="./img-logo/download (11).png" />
+          <img src="./img-logo/download (12).png" />
+          <img src="./img-logo/Hyundai_Motor_Company_logo.svg.png" />
+          <img src="./img-logo/Logo_молокія.png" />
+          <img src="./img-logo/okko-logo.png" />
+          <img src="./img-logo/Oschadbank_(uk).png" />
+          <img src="./img-logo/Torchyn_loho.png" />
+        </div>
       </div>
     </div>
 
     <script>
-      var copy = document.querySelector(".logos-slide").cloneNode(true);
+      const copy = document.querySelector(".logos-slide").cloneNode(true);
       document.querySelector(".logos").appendChild(copy);
     </script>
   </body>
